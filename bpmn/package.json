@@ -1,0 +1,29 @@
+{
+  "name": "bpmn-js-spiffworkflow-demo",
+  "version": "0.0.0",
+  "description": "Example using BPMN.js with SpiffWorkflows Extensions in your project",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:watch": "webpack --watch",
+    "dev": "run-p build:watch serve",
+    "serve": "sirv public --dev",
+    "start": "run-s build serve"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "raw-loader": "^4.0.2",
+    "sirv": "^2.0.2",
+    "sirv-cli": "^2.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "bpmn-js": "^9.4.1",
+    "bpmn-js-properties-panel": "1.5.0",
+    "bpmn-js-spiffworkflow": "file:../../bpmn-js-spiffworkflow",
+    "file-saver": "^2.0.5"
+  }
+}
