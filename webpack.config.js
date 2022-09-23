@@ -53,15 +53,13 @@ module.exports = [
     output: {
       path: `${__dirname}/dist`,
       filename: 'index.js',
-      library: {
-        name: 'SpiffWorkflow',
-        type: 'umd',
-        export: 'default',
-      },
     },
     module: myModule,
     mode: 'development',
     devtool: 'source-map',
+    resolve: {
+      extensions: ['.js'],
+    },
   },
   {
     entry: {
